@@ -11,6 +11,17 @@ use App\Domains\Company\Create as CreateCompanyDomain;
 use App\Repositories\User\Create as CreateUserRepository;
 use App\Repositories\Company\Create as CreateCompanyRepository;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de transação para garantir atomicidade entre todas as operações
+ * - Não há validação de força da senha
+ * - Falta validação de formato e unicidade do CNPJ e CPF
+ * - Não há logs específicos para auditoria de criação de empresa
+ * - Não há tratamento específico para diferentes tipos de erros
+ * - Não há cache para dados da empresa que são consultados frequentemente
+ */
+
 class CreateFirstUser extends BaseUseCase
 {
     /**

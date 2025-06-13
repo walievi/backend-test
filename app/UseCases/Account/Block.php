@@ -7,6 +7,16 @@ use App\UseCases\BaseUseCase;
 use App\Repositories\Account\UpdateStatus as RepositoryUpdateStatus;
 use App\Integrations\Banking\Account\UpdateStatus as IntegrationUpdateStatus;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de transação para garantir atomicidade entre updateDatabase() e updateStatus()
+ * - Não há validação de status atual da conta antes de bloquear
+ * - Falta logs específicos para auditoria de bloqueio
+ * - Não há validação de permissões específicas para bloqueio
+ * - Não há tratamento específico para diferentes tipos de erros do BaaS
+ */
+
 class Block extends BaseUseCase
 {
     /**

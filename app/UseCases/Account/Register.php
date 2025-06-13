@@ -9,6 +9,16 @@ use App\Repositories\Account\Create;
 use App\Exceptions\InternalErrorException;
 use App\Integrations\Banking\Account\Create as BankingCreate;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de transação para garantir atomicidade entre register() e store()
+ * - Não há retry policy para chamadas ao BaaS
+ * - Falta validação de status da conta antes de criar
+ * - Não há logs específicos para monitoramento de performance
+ * - Não há tratamento específico para diferentes tipos de erros do BaaS
+ */
+
 class Register extends BaseUseCase
 {
     /**

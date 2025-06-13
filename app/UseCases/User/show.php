@@ -6,6 +6,17 @@ use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Repositories\User\Find;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Nomes de variáveis muito genéricos (a, b, c) dificultam a manutenção e legibilidade
+ * - Não há tratamento específico para diferentes tipos de exceções
+ * - Nome da classe em minúsculo (show) não segue o Padrão
+ * - Falta tipagem de retorno no método handle()
+ * - Não há logs específicos para debug
+ * - Falta validação de permissões do usuário
+ */
+
 class show extends BaseUseCase
 {
     /**

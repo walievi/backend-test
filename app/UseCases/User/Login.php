@@ -6,6 +6,16 @@ use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Repositories\Token\Create as create_token;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de credenciais antes de criar token
+ * - Não há validação de status do usuário
+ * - Falta logs específicos para auditoria de login
+ * - Não há validação de tentativas de login
+ * - Falta validação de expiração do token
+ */
+
 class Login extends BaseUseCase
 {
     /**

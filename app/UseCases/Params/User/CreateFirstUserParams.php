@@ -4,6 +4,16 @@ namespace App\UseCases\Params\User;
 
 use App\UseCases\Params\BaseParams;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de formato de email
+ * - Não há validação de força da senha
+ * - Falta validação de formato do CNPJ e CPF
+ * - Falta validação de tamanho máximo dos campos
+ * - Não há validação de caracteres especiais
+ */
+
 class CreateFirstUserParams extends BaseParams
 {
     /**

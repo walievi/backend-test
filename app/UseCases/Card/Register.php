@@ -8,6 +8,15 @@ use App\Repositories\Card\Create;
 use App\Domains\Card\Register as RegisterDomain;
 use App\Integrations\Banking\Card\Register as LinkCard;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de transação para garantir atomicidade entre register() e store()
+ * - Não há logs específicos para auditoria de cartões
+ * - Falta validação de status da conta antes de criar cartão
+ * - Não há tratamento específico para diferentes tipos de erros do BaaS
+ */
+
 class Register extends BaseUseCase
 {
     /**

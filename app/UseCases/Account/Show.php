@@ -6,6 +6,17 @@ use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Integrations\Banking\Account\Find;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de permissões para visualizar conta
+ * - Não há cache para dados frequentemente consultados
+ * - Falta logs específicos para auditoria de consulta
+ * - Falta validação de campos de retorno
+ * - Não há validação de status da conta
+ * - Não há validação de dados sensíveis
+ */
+
 class Show extends BaseUseCase
 {
     /**

@@ -7,6 +7,16 @@ use App\UseCases\BaseUseCase;
 use App\Repositories\User\Retrieve;
 use Illuminate\Pagination\LengthAwarePaginator;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de permissões para listar usuários
+ * - Não há cache para resultados frequentes
+ * - Falta validação de parâmetros de filtro
+ * - Não há logs específicos para auditoria de listagem
+ * - Falta validação de campos de retorno
+ */
+
 class Index extends BaseUseCase
 {
     /**

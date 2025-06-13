@@ -4,6 +4,12 @@ namespace App\UseCases\Params\User;
 
 use App\UseCases\Params\BaseParams;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Não há validação de campos quando fornecido
+ */
+
 class UpdateParams extends BaseParams
 {
     /**

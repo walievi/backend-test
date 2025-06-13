@@ -6,6 +6,18 @@ use Throwable;
 use App\UseCases\BaseUseCase;
 use App\Repositories\Company\Find;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de permissões para visualizar empresa
+ * - Não há cache para dados frequentemente consultados
+ * - Falta logs específicos para auditoria de consulta
+ * - Falta validação de campos de retorno
+ * - Não há validação de status da empresa
+ * - Falta validação de relacionamentos
+ * - Não há validação de dados sensíveis
+ */
+
 class Show extends BaseUseCase
 {
     /**

@@ -8,6 +8,16 @@ use App\UseCases\Params\User\UpdateParams;
 use App\Domains\User\Update as UpdateDomain;
 use App\Repositories\User\Update as UpdateRepository;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de permissões para atualizar usuário
+ * - Falta logs específicos para auditoria de alterações
+ * - Não há validação de força da senha
+ * - Falta validação de status do usuário
+ * - Não há validação de campos obrigatórios
+ */
+
 class Update extends BaseUseCase
 {
     /**

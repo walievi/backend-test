@@ -7,6 +7,18 @@ use App\UseCases\BaseUseCase;
 use App\Repositories\Account\UpdateStatus as RepositoryUpdateStatus;
 use App\Integrations\Banking\Account\UpdateStatus as IntegrationUpdateStatus;
 
+/**
+ * Sugestões de melhorias:
+ *
+ * - Falta validação de transação para garantir atomicidade entre updateDatabase() e updateStatus()
+ * - Não há validação de status atual da conta antes de ativar
+ * - Falta logs específicos para auditoria de ativação
+ * - Não há validação de permissões específicas para ativação
+ * - Não há tratamento específico para diferentes tipos de erros do BaaS
+ * - Falta validação de rate limiting para ativação de contas
+ * - Não há cache para dados da conta que são consultados frequentemente
+ */
+
 class Active extends BaseUseCase
 {
     /**
